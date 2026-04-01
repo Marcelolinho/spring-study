@@ -24,15 +24,10 @@ public class ScriptEngineStudy {
     }
 
     public String interpretPython() {
-//        ScriptEngineManager scriptEngineManager = new ScriptEngineManager();
-//        ScriptEngine scriptEngine = scriptEngineManager.getEngineByName("python");
         try {
             ProcessBuilder pb = new ProcessBuilder();
-//            pb.command("/home/maker/env/bin/activate");
             pb.command("/home/maker/env/bin/python", "-u", "/home/maker/Documentos/python_scripts/java_test.py");
             log.debug("buscou o arquivo!");
-//        Reader reader
-//        scriptEngine.
 
             Process process = pb.start();
             log.debug("começou a executar o script!");
